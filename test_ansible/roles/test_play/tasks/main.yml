@@ -1,0 +1,6 @@
+---
+# tasks file for test_play/
+- name: testplay
+  shell: "uname -a"
+  register: results
+- debug: var=results.stdout

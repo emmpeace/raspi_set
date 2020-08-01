@@ -1,0 +1,3 @@
+[linuxes]
+ubuntu_cl ip=192.168.89.10
+centos_cl ip=192.168.89.11
