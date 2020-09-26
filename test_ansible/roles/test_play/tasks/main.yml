@@ -1,6 +1,10 @@
 ---
 # tasks file for test_play/
-- name: testplay just run uname -a
-  shell: "uname -a"
-  register: results
-- debug: var=results.stdout
+# - name: testplay just run uname -a
+#   shell: "uname -a"
+#   register: results
+# - debug: var=results.stdout
+
+- name: create local user 
+  include: create_local_user.yml
+  tags: create_local_user

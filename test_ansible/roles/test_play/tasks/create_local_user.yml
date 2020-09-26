@@ -1,0 +1,9 @@
+---
+vars: 
+  user_name: ansibleu
+
+- name: create local user
+  user: 
+    name: "{{ user_name }}"
+    state: present
+
