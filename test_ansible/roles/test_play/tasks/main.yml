@@ -1,6 +1,6 @@
 ---
 # tasks file for test_play/
-- name: testplay
+- name: testplay just run uname -a
   shell: "uname -a"
   register: results
 - debug: var=results.stdout
