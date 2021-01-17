@@ -1,6 +1,11 @@
-[linuxes]
-192.168.89.102
-192.168.89.101
+#[ubuntu_vm]
+#ubuntu_vm
+#[centos_vm]
+#centos_vm
+
+[vms]
+centos_vm
+ubuntu_vm
 
 [pi4]
-192.168.27.250
+192.168.27.196 ansible_port=9327

@@ -1,5 +1,8 @@
-- hosts: linuxes
+## my attemp to create a sudo account 
+
+- hosts: centos_vm
   remote_user: emm
+  become_method: su
   vars:
     usr: 
       name: ansibleu
@@ -11,4 +14,21 @@
     user: 
       name: "{{ usr.name }}"
       state: present
- 
+
+
+## for ubuntu 
+- hosts: ubuntu_vm
+  remote_user: emm
+  become_method: su
+  vars:
+    usr: 
+      name: ansibleu
+      pub_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCjomKMqKC7j/RJV2dYJ2hOBw/lXZcrelEzmtdiSE7OVjAgg6QtueFyqsP6XgeVrExDI1J4nBybulnhTFpjuBnInLPoF1KAgAWeJvmWtTpoVn+8U4Q5YKSsdn0iVU+5ZhxKiJRq7gPnLCQASUUVRk1jVHzH0ltsI1DoIWqHsEqR6GnCSTqzzZB4xeMh+TqfY0kUROigA9GQMbxHgAblW1dvQX5m2eUS9PRFu23SNY9sYxBErdggybDq817NLdktHmYmDp6f4enPmHpdad3VG4xWkqvv0T3xsHkbGY3/+eJMMI4WvggDa+2rDWk+WZK/mDW89o6DNH5yykoF35UY9H2oO2JPzg7MKXqz0yMzY7o2gKA9LnzC9j1DZZm8gBPD0WNOLqTHWpunezphW5nrkVvyIcggsKhH4i9WB7pr2S7pasiE0TF6khu5oUxN2BEXc+HjLwUCdexLVHUwJj/D+xZ2WzBqvBsfbfYRlPs8M9dVNmg6AlURF7gON3CZfqDdcn8= emmpeace@emmdm
+  
+  tasks:
+  
+  - name: create local user
+    user: 
+      name: "{{ usr.name }}"
+      state: present
+

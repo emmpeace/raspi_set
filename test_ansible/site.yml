@@ -1,5 +1,5 @@
 ---
-  - hosts: linuxes
+  - hosts: vms
     roles:
       - test_play
 
