@@ -22,4 +22,7 @@ ansible -m ping -i inventory/all pi4
 
 ansible-playbook site.yml -i inventory/all 
 
+lil note 
+(\.|^)s\.youtube\.com$
+
 

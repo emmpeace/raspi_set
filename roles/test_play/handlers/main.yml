@@ -1,2 +1,7 @@
 ---
 # handlers file for test_play/
+
+- name: Restart 
+  service:
+    name: systemd-resolved
+    state: restarted

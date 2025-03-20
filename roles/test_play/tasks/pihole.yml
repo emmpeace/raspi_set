@@ -1,0 +1,28 @@
+---
+
+- name: dns stub settings
+  lineinfile:
+    path: /etc/systemd/resolved.conf
+    line: DNSStubListener=no
+    state: present
+  notify: restart systemd-resolved
+
+- name: create pihole folder
+  file:
+    path: /opt/pihole
+    state: directory
+
+- name: send compose file
+  copy:
+    src: docker-compose.yml
+    dest: /opt/pihole/docker-compose.yml
+
+- name: deploy pihole
+  community.docker.docker_compose_v2:
+    project_src: /opt/pihole
+    state: present
+
+- name: Add adlist
+  copy:
+    src: adlist.list
+    dest: /opt/pihole/etc-pihole/adlist.list
