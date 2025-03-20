@@ -1,0 +1,12 @@
+---
+  - hosts: all
+    roles:
+      - test_play
+    user: emm
+    become: yes
+
+
+
+
+
+

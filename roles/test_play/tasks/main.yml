@@ -1,0 +1,9 @@
+---
+
+- name: Install Docker
+  import_tasks: docker_install.yml
+  tags: docker_install
+
+- name: set PiHole
+  import_tasks: pihole.yml
+  tags: pihole

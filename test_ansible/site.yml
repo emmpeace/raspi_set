@@ -1,8 +1,0 @@
----
-  - hosts: vms
-    roles:
-      - test_play
-
-
-
-
