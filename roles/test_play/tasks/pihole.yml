@@ -24,5 +24,5 @@
 
 - name: Add adlist
   copy:
-    src: adlist.list
-    dest: /opt/pihole/etc-pihole/adlist.list
+    src: adlists.list
+    dest: /opt/pihole/etc-pihole/adlists.list
