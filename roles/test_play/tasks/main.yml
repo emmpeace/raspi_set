@@ -1,4 +1,9 @@
 ---
+
+- name: Network settings
+  import_tasks: network.yml
+  tags: network
+
 - name: Install Chrony
   import_tasks: chrony.yml
   tags: chrony

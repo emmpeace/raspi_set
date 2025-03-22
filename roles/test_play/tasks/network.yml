@@ -1,0 +1,6 @@
+
+- name: Send netplan file
+  copy:
+    src: 10_eth0_netplan.yaml
+    dest: /etc/netplan/10_eth0_netplan.yaml
+  notify: apply netplan
