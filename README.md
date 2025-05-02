@@ -8,6 +8,9 @@ used on
   - Ubuntu 24.04 on wsl
   - ansible [core 2.17.9], python version = 3.12.3
 
+---
+This Features:
+- Pihole
 
 notes along the way
 
