@@ -1,2 +1,5 @@
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://warui.intaa.net/adhosts/hosts.txt
+https://warui.intaa.net/files/warui_hosts/warui_malware_ipv4.txt
+https://warui.intaa.net/files/warui_hosts/warui_phish_ipv4.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
