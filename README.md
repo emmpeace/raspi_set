@@ -13,8 +13,10 @@ This Features:
 - Pihole
 
 notes along the way
-
 ---
+Reference for pihole adlist
+https://dabun.net/md/pi-hole/#pi-hole-setting-blocklist
+
 Because i use ssh key
 
 ssh-agent bash
